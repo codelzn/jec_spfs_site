@@ -9,6 +9,9 @@ html {
   font-size: 16px;
   font-family: 'Yusei Magic', sans-serif;
 }
+img, video {
+  width: 100%;
+}
 li {
   list-style: none;
 }
@@ -17,6 +20,7 @@ a {
 }
 /* ヘッダー部分 */
 header {
+  position: relative;
   height: 704px;
   text-align: center;
   background-color: pink;
@@ -25,11 +29,86 @@ header {
 }
 header .logo {
   margin-top: 77px;
+  height: 378px;
+
 }
 header ul {
-  list-style: none;
-  margin-top: 100px;
+  margin-top: 25px;
 }
-header .nav-content {
-  display: none;
+header ul li {
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 1.875rem;
+}
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 17px;
+}
+.nav .burger {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.nav .line {
+  margin: 0 auto;
+  display: block;
+  background-color: #df7c3e;
+  width: 30px;
+  height: 6px;
+  border-radius: 3px;
+  transition:all 0.25s;
+}
+.nav .line.top {
+  margin-top: 17px;
+  margin-bottom: 5px;
+}
+.nav .line.bottom {
+  margin-top: 5px;
+}
+.burger.active .top {
+  margin-top: 27px;
+  margin-bottom: -6px;
+  transform: rotate(45deg);
+}
+.burger.active .middle {
+  transform: rotate(45deg);
+}
+.burger.active .bottom {
+  margin-top: -6px;
+  transform: rotate(135deg);
+}
+.burger-content {
+  position: fixed;
+  top: 0;
+  right: -70vw;
+  height: 100vh;
+  width: 70vw;
+  background-color: rgba(255, 255, 255, .7);
+  transition: all 0.25s;
+}
+.burger-content ul {
+  margin: 0;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.burger-content ul li a {
+  font-size: 3.75rem;
+  color: #df7c3e;
+}
+.burger-content.active {
+  display: block;
+  transform: translateX(-70vw);
+}
+/* メインコンテンツ */
+main .catch {
+  text-align: center;
 }
