@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+/* 初期化処理 */
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  font-size: 16px;
+  font-family: 'Yusei Magic', sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* ヘッダー部分 */
+header {
+  height: 704px;
+  text-align: center;
+  background-color: pink;
+  background: url('../images/mainvisual_big.jpg') no-repeat;
+  background-size: cover;
+}
+header .logo {
+  margin-top: 77px;
+}
+header ul {
+  list-style: none;
+  margin-top: 100px;
+}
+header .nav-content {
+  display: none;
+}
