@@ -46,6 +46,7 @@ header ul li {
   padding-bottom: 10px;
   color: #fff;
   font-size: 1.875rem;
+  text-shadow: #000 0px 0px 5px;
 }
 .nav {
   position: absolute;
@@ -108,6 +109,7 @@ header ul li {
   justify-content: space-around;
 }
 .burger-content ul li a {
+  text-shadow: none;
   font-size: 3.75rem;
   color: var(--text-orange);
 }
@@ -116,13 +118,17 @@ header ul li {
   transform: translateX(-75vw);
 }
 /* メインコンテンツ */
+main {
+  background-color: var(--bgc-green);
+}
 main .catch {
+  background-color: #fff;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 main .catch h2 {
   font-size: 3.125rem;
@@ -136,6 +142,8 @@ main .catch p {
   color: var(--text-orange);
 }
 .intro {
+  margin: 0 auto;
+  max-width: 768px;
   height: 420px;
   position: relative;
   padding: 0 22px;
@@ -199,7 +207,7 @@ main .catch p {
   background: url('../images/btn_after.svg');
 }
 .concept {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   background-color: var(--bgc-green);
 }
 .concept h2 {
@@ -207,6 +215,11 @@ main .catch p {
   color: var(--text-orange);
   margin-bottom: 30px;
   text-align: center;
+}
+.concept video {
+  display: block;
+  margin: 0 auto;
+  max-width: 768px;
 }
 .concept .btn {
   margin: 20px auto 0;
@@ -219,4 +232,107 @@ main .catch p {
   font-size: 1.5625rem;
   line-height: 47px;
   padding-left: 16px;
+}
+.message {
+  background-color: var(--bgc-yellow);
+  padding-top: 50px;
+}
+.message h2 {
+  font-size: 2.1875rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.msg-item {
+  margin: 0 auto;
+  padding: 0 22px;
+  display: flex;
+  min-width: 375px;
+  min-height: 200px;
+  max-width: 768px;
+  overflow: hidden;
+}
+.msg-item:first-of-type {
+  margin-bottom: 20px;
+}
+.msg-img {
+  width: 50%;
+  background: url('../images/fp_img01.jpeg') no-repeat center;
+  background-size: cover;
+}
+.msg-text {
+  height: 100%;
+  background-color: #fff;
+  width: 50%;
+}
+.msg-text h3 {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.msg-text p {
+  display: block;
+  max-height: 238px;
+  min-height: 238px;
+  font-size: 1rem;
+  padding: 30px 10px;
+  line-height: 1.5;
+  overflow-y:scroll;
+}
+.qs {
+  background-color: var(--bgc-yellow);
+  padding: 80px 0 50px;
+}
+.qs h2 {
+  font-size: 2.1875rem;
+  text-align: center;
+}
+.qs ul {
+  font-size: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.qs ul li:nth-child(1) {
+  border-bottom: 2px solid #EB3223;
+}
+.qs ul li:nth-child(2) {
+  border-bottom: 2px solid #BB407E;
+}
+.qs ul li:nth-child(3) {
+  border-bottom: 2px solid #69A555;
+}
+.qs ul li:nth-child(4) {
+  border-bottom: 2px solid #3C91D5;
+}
+.qs ul li:nth-child(1) em {
+  color: #EB3223;
+}
+.qs ul li:nth-child(2) em {
+  color: #BB407E;
+}
+.qs ul li:nth-child(3) em {
+  color: #69A555;
+}
+.qs ul li:nth-child(4) em {
+  color: #3C91D5;
+}
+footer {
+  position: relative;
+}
+footer .totop {
+  position: absolute;
+  right: 22px;
+  bottom: 60px;
+}
+footer p {
+  font-size: .875rem;
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  width: 100%;
+  background-color: var(--btn-green);
+  color: #fff;
+  text-align: center;
 }
