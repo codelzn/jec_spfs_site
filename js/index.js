@@ -1,16 +1,8 @@
-"use strict";
-class Main {
-  // burger menu
-  initBurgerMenu (controls, item) {
-    const burger = document.querySelector(controls);
-    const burgerContent = document.querySelector(item);
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('active');
-      burgerContent.classList.toggle('active');
-    })
-  }
-}
-const home = new Main();
-home.initBurgerMenu('.burger', '.burger-content');
-
-export default Main;
+'use strict'
+// burger menu
+const burger = document.querySelector('.burger')
+const burgerContent = document.querySelector('.burger-content')
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active')
+  burgerContent.classList.toggle('active')
+})
