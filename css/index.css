@@ -6,7 +6,10 @@
 }
 body,
 html {
+  width: 100%;
   font-size: 16px;
+  overflow: hidden;
+  overflow-y: auto;
   font-family: 'Yusei Magic', sans-serif;
 }
 img,
@@ -32,7 +35,7 @@ header {
   position: relative;
   height: 704px;
   text-align: center;
-  background: url('../images/mainvisual_big.jpg') no-repeat;
+  background: url('../images/mainvisual_big.jpg') no-repeat center center;
   background-size: cover;
 }
 header .logo {
@@ -56,6 +59,7 @@ header ul li {
 .nav .burger {
   position: absolute;
   right: 0;
+  top: 0;
   z-index: 10;
   display: block;
   width: 60px;
@@ -110,7 +114,7 @@ header ul li {
 }
 .burger-content ul li a {
   text-shadow: none;
-  font-size: 3.75rem;
+  font-size: 40px;
   color: var(--text-orange);
 }
 .burger-content.active {
@@ -287,7 +291,7 @@ main .catch p {
   text-align: center;
 }
 .qs ul {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;

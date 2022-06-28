@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+/* 初期化処理 */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  font-size: 16px;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+img,
+video {
+  width: 100vw;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  height: 76.02592vh;
+  text-align: center;
+  background: url("../images/mainvisual_big.jpg") no-repeat;
+  background-size: cover;
+}
+
+header .logo {
+  margin-top: 8.31533vh;
+  height: 40.82073vh;
+}
+
+header ul {
+  padding-top: 2.15983vh;
+}
+
+header ul li {
+  padding-bottom: 1.07991vh;
+  color: #fff;
+  font-size: 3.23974vh;
+  text-shadow: #000 0px 0px 5px;
+}
+
+header .nav {
+  position: fixed;
+  z-index: 9;
+  top: 2.15983vh;
+  right: 4.20561vw;
+}
+
+header .nav .burger {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #df7c3e;
+  border-radius: 50%;
+}
+
+header .nav .burger .line {
+  display: block;
+  margin: 0 auto;
+  width: 22px;
+  height: 4px;
+  background-color: #df7c3e;
+  border-radius: 3px;
+  transition: all 0.25s;
+}
+
+header .nav .burger .line.top {
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+header .nav .burger .line.bottom {
+  margin-top: 5px;
+}
+
+header .nav .burger.active .top {
+  margin-top: 18px;
+  margin-bottom: -4px;
+  transform: rotate(45deg);
+}
+
+header .nav .burger.active .middle {
+  transform: rotate(45deg);
+}
+
+header .nav .burger.active .bottom {
+  margin-top: -5px;
+  transform: rotate(135deg);
+}
+
+header .nav .burger-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.25s;
+}
+
+header .nav .burger-content ul {
+  display: none;
+}
+
+header .nav .burger-content ul li a {
+  text-shadow: none;
+  font-size: 40px;
+  color: #df7c3e;
+}
+
+header .nav .burger-content.active {
+  position: fixed;
+  z-index: 7;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+}
+
+header .nav .burger-content.active ul.active {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4.31965vh;
+}
+
+main .catch {
+  background-color: #fff;
+  margin-top: 2.15983vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4.31965vh;
+}
+
+main .catch h2 {
+  font-size: 11.68224vw;
+  color: #df7c3e;
+  margin-bottom: 2.15983vh;
+}
+
+main .catch p {
+  line-height: 200%;
+  padding: 0 5.14019vw;
+  font-size: 4.6729vw;
+  color: #df7c3e;
+}

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+/* 初期化処理 */
+* {
+  padding: 0;
+  margin: 0;
+}
+// xdデザインサイズ width:428px height:926px
+@function vw($px) {
+  @return ($px / 428) * 100vw;
+}
+@function vh($px) {
+  @return ($px / 926) * 100vh;
+}
+body,
+html {
+  font-size: 16px;
+  font-family: "Yusei Magic", sans-serif;
+}
+img,
+video {
+  width: 100vw;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+$bgc-green: #ecf6e0;
+$bgc-yellow: #fbf5d5;
+$bgc-blue: #5191cf;
+$btn-green: #53a849;
+$text-orange: #df7c3e;
+$burger-content-bgc: rgba(255, 255, 255, 0.9);
+header {
+  position: relative;
+  height: vh(704);
+  text-align: center;
+  background: url("../images/mainvisual_big.jpg") no-repeat;
+  background-size: cover;
+  .logo {
+    margin-top: vh(77);
+    height: vh(378);
+  }
+  ul {
+    padding-top: vh(20);
+    li {
+      padding-bottom: vh(10);
+      color: #fff;
+      font-size: vh(30);
+      text-shadow: #000 0px 0px 5px;
+    }
+  }
+  .nav {
+    position: fixed;
+    z-index: 9;
+    top: vh(20);
+    right: vw(18);
+    .burger {
+      box-sizing: border-box;
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border: 2px solid $text-orange;
+      border-radius: 50%;
+      .line {
+        display: block;
+        margin: 0 auto;
+        width: 22px;
+        height: 4px;
+        background-color: $text-orange;
+        border-radius: 3px;
+        transition: all 0.25s;
+        &.top {
+          margin-top: 8px;
+          margin-bottom: 5px;
+        }
+        &.bottom {
+          margin-top: 5px;
+        }
+      }
+      &.active .top {
+        margin-top: 18px;
+        margin-bottom: -4px;
+        transform: rotate(45deg);
+      }
+      &.active .middle {
+        transform: rotate(45deg);
+      }
+      &.active .bottom {
+        margin-top: -5px;
+        transform: rotate(135deg);
+      }
+    }
+    .burger-content {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 9;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $burger-content-bgc;
+      transition: all 0.25s;
+      ul {
+        display: none;
+        li a {
+          text-shadow: none;
+          font-size: 40px;
+          color: $text-orange;
+        }
+      }
+      &.active {
+        position: fixed;
+        z-index: 7;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        ul.active {
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: vh(40);
+        }
+      }
+    }
+  }
+}
+main {
+  .catch {
+    background-color: #fff;
+    margin-top: vh(20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: vh(40);
+    h2 {
+      font-size: vw(50);
+      color: $text-orange;
+      margin-bottom: vh(20);
+    }
+    p {
+      line-height: 200%;
+      padding: 0 vw(22);
+      font-size: vw(20);
+      color: $text-orange;
+    }
+  }
+}

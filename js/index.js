@@ -13,3 +13,7 @@ navlinks.forEach((v, i) => {
     burgerContent.classList.toggle('active')
   })
 })
+burgerContent.addEventListener('transitionend', () => {
+  const ul = burgerContent.children[0]
+  burgerContent.classList.value.indexOf('active') > -1 ? ul.classList.add('active') : ul.classList.remove('active')
+})
