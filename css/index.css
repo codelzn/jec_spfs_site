@@ -187,7 +187,7 @@ main .catch p {
   line-height: 47px;
   padding-left: 16px;
 }
-.intro .btn::after {
+.btn::after {
   content: '';
   display: block;
   position: absolute;
@@ -199,6 +199,7 @@ main .catch p {
   background: url('../images/btn_after.svg');
 }
 .concept {
+  padding-bottom: 20px;
   background-color: var(--bgc-green);
 }
 .concept h2 {
@@ -208,8 +209,8 @@ main .catch p {
   text-align: center;
 }
 .concept .btn {
-  position: absolute;
-  transform: translateX(-50%);
+  margin: 20px auto 0;
+  position: relative;
   width: 222px;
   height: 47px;
   background-color: var(--btn-green);
