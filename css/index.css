@@ -11,6 +11,7 @@ html {
   overflow: hidden;
   overflow-y: auto;
   font-family: 'Yusei Magic', sans-serif;
+  background-color: #fff;
 }
 img,
 video {
