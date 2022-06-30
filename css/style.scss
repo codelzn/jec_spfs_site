@@ -11,12 +11,17 @@
 @function vh($px) {
   @return ($px / 926) * 100vh;
 }
+// @media only screen and (max-width: 400px) {
+//   body, html {
+//     font-size: 10px;
+//   }
+// }
 body,
 html {
   background-color: #fff;
   font-size: 16px;
   font-family: "Yusei Magic", sans-serif;
-  transition: all 0.5s ease 0s;
+  transition: all 0.25s 0s;
 }
 img,
 video {
@@ -144,14 +149,14 @@ main {
     align-items: center;
     padding-bottom: vh(40);
     h2 {
-      font-size: vh(50);
+      font-size: vw(50);
       color: $text-orange;
       margin-bottom: vh(20);
     }
     p {
       line-height: 200%;
       padding: 0 vw(22);
-      font-size: vh(20);
+      font-size: vw(20);
       color: $text-orange;
     }
   }
@@ -161,8 +166,11 @@ main {
     height: vh(420);
     position: relative;
     padding: vh(50) vw(22) vh(80);
+    .intro_content {
+      position: relative;
+    }
     h2 {
-      font-size: 2.1875rem;
+      font-size: vw(35);
       color: #000;
       margin-bottom: vh(30);
       text-align: center;
@@ -170,7 +178,7 @@ main {
     p {
       position: absolute;
       right: vw(22);
-      top: vh(130);
+      top: 0;
       width: vh(270);
       height: vh(270);
       overflow: hidden;
@@ -178,7 +186,7 @@ main {
     ul {
       position: absolute;
       left: vw(22);
-      top: vh(130);
+      top: 0;
       z-index: 2;
       display: flex;
       width: vh(270);
@@ -189,7 +197,7 @@ main {
       align-items: flex-start;
       color: $text-orange;
       padding-left: vw(20);
-      font-size: vh(25);
+      font-size: vw(25);
     }
     .btn {
       position: absolute;
@@ -202,7 +210,7 @@ main {
       background-color: $btn-green;
       border-radius: 3px;
       color: #fff;
-      font-size: 1.5625rem;
+      font-size: vw(25);
       line-height: 47px;
       padding-left: 1rem;
       &::after {
@@ -221,7 +229,8 @@ main {
   .concept {
     padding-bottom: vh(30);
     h2 {
-      font-size: 2.1875rem;
+      font-size: vw(35);
+      // font-size: 2.1875rem;
       color: #000;
       margin-bottom: vh(30);
       text-align: center;
@@ -241,7 +250,7 @@ main {
       background-color: $btn-green;
       border-radius: 3px;
       color: #fff;
-      font-size: 1.5625rem;
+      font-size: vw(25);
       line-height: 47px;
       padding-left: 1rem;
       &::after {
@@ -260,7 +269,8 @@ main {
   .message {
     padding-top: vh(50);
     h2 {
-      font-size: 2.1875rem;
+      // font-size: 2.1875rem;
+      font-size: vw(35);
       margin-bottom: vh(30);
       text-align: center;
     }
@@ -270,8 +280,9 @@ main {
       width: 90vw;
       // min-width: 375px;
       // min-height: 200px;
-      height: 300px;
+      height: vh(238);
       max-width: 768px;
+      max-height: 484px;
       overflow: hidden;
       &:first-of-type {
         margin-bottom: vh(20);
@@ -287,15 +298,16 @@ main {
         width: 50%;
         h3 {
           margin-top: vh(10);
-          font-size: 1.25rem;
+          font-size: vw(20);
           text-align: center;
         }
         p {
+          position: relative;
           display: block;
           max-height: 238px;
-          min-height: 238px;
-          font-size: 1rem;
-          padding: vh(30) vw(10);
+          font-size: vw(16);
+          margin: vh(10) vw(10);
+
           line-height: 1.5;
           overflow-y: scroll;
         }
@@ -305,7 +317,7 @@ main {
   .qs {
     padding: vh(80) 0 vh(50);
     h2 {
-      font-size: 2.1875rem;
+      font-size: vw(35);
       text-align: center;
     }
     ul {
@@ -321,27 +333,27 @@ main {
           text-overflow: unset;
         }
         &:nth-child(1) {
-          border-bottom: 2px solid #EB3223;
+          border-bottom: 2px solid #eb3223;
           em {
-            color: #EB3223;
+            color: #eb3223;
           }
         }
         &:nth-child(2) {
-          border-bottom: 2px solid #BB407E;
+          border-bottom: 2px solid #bb407e;
           em {
-            color: #BB407E;
+            color: #bb407e;
           }
         }
         &:nth-child(3) {
-          border-bottom: 2px solid #69A555;
+          border-bottom: 2px solid #69a555;
           em {
-            color: #69A555;
+            color: #69a555;
           }
         }
         &:nth-child(4) {
-          border-bottom: 2px solid #3C91D5;
+          border-bottom: 2px solid #3c91d5;
           em {
-            color: #3C91D5;
+            color: #3c91d5;
           }
         }
       }
@@ -364,5 +376,51 @@ footer {
     background-color: $btn-green;
     color: #fff;
     text-align: center;
+  }
+}
+@media only screen and (min-width: 450px) {
+  main {
+    .intro,
+    .concept,
+    .message,
+    .qs {
+      h2 {
+        font-size: 2.1875rem;
+      }
+    }
+    .catch {
+      h2 {
+        font-size: 3.125rem;
+      }
+      p {
+        font-size: 1.25rem;
+      }
+    }
+    .intro{
+      ul {
+        font-size: 1.5625rem;
+      }
+      .btn {
+        font-size: 1.5625rem;
+      }
+    }
+    .concept {
+      .btn {
+        font-size: 1.5625rem;
+      }
+    }
+    .message {
+      .msg-item {
+        height: auto;
+        .msg-text {
+          h3 {
+            font-size: 1.25rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
   }
 }

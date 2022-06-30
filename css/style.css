@@ -11,7 +11,7 @@ html {
   background-color: #fff;
   font-size: 16px;
   font-family: "Yusei Magic", sans-serif;
-  transition: all 0.5s ease 0s;
+  transition: all 0.25s 0s;
 }
 
 img,
@@ -155,7 +155,7 @@ main .catch {
 }
 
 main .catch h2 {
-  font-size: 5.39957vh;
+  font-size: 11.68224vw;
   color: #df7c3e;
   margin-bottom: 2.15983vh;
 }
@@ -163,7 +163,7 @@ main .catch h2 {
 main .catch p {
   line-height: 200%;
   padding: 0 5.14019vw;
-  font-size: 2.15983vh;
+  font-size: 4.6729vw;
   color: #df7c3e;
 }
 
@@ -175,8 +175,12 @@ main .intro {
   padding: 5.39957vh 5.14019vw 8.63931vh;
 }
 
+main .intro .intro_content {
+  position: relative;
+}
+
 main .intro h2 {
-  font-size: 2.1875rem;
+  font-size: 8.17757vw;
   color: #000;
   margin-bottom: 3.23974vh;
   text-align: center;
@@ -185,7 +189,7 @@ main .intro h2 {
 main .intro p {
   position: absolute;
   right: 5.14019vw;
-  top: 14.03888vh;
+  top: 0;
   width: 29.15767vh;
   height: 29.15767vh;
   overflow: hidden;
@@ -194,7 +198,7 @@ main .intro p {
 main .intro ul {
   position: absolute;
   left: 5.14019vw;
-  top: 14.03888vh;
+  top: 0;
   z-index: 2;
   display: flex;
   width: 29.15767vh;
@@ -205,7 +209,7 @@ main .intro ul {
   align-items: flex-start;
   color: #df7c3e;
   padding-left: 4.6729vw;
-  font-size: 2.69978vh;
+  font-size: 5.84112vw;
 }
 
 main .intro .btn {
@@ -219,7 +223,7 @@ main .intro .btn {
   background-color: #53a849;
   border-radius: 3px;
   color: #fff;
-  font-size: 1.5625rem;
+  font-size: 5.84112vw;
   line-height: 47px;
   padding-left: 1rem;
 }
@@ -241,7 +245,7 @@ main .concept {
 }
 
 main .concept h2 {
-  font-size: 2.1875rem;
+  font-size: 8.17757vw;
   color: #000;
   margin-bottom: 3.23974vh;
   text-align: center;
@@ -263,7 +267,7 @@ main .concept .btn {
   background-color: #53a849;
   border-radius: 3px;
   color: #fff;
-  font-size: 1.5625rem;
+  font-size: 5.84112vw;
   line-height: 47px;
   padding-left: 1rem;
 }
@@ -285,7 +289,7 @@ main .message {
 }
 
 main .message h2 {
-  font-size: 2.1875rem;
+  font-size: 8.17757vw;
   margin-bottom: 3.23974vh;
   text-align: center;
 }
@@ -294,8 +298,9 @@ main .message .msg-item {
   margin: 0 auto;
   display: flex;
   width: 90vw;
-  height: 300px;
+  height: 25.70194vh;
   max-width: 768px;
+  max-height: 484px;
   overflow: hidden;
 }
 
@@ -317,16 +322,16 @@ main .message .msg-item .msg-text {
 
 main .message .msg-item .msg-text h3 {
   margin-top: 1.07991vh;
-  font-size: 1.25rem;
+  font-size: 4.6729vw;
   text-align: center;
 }
 
 main .message .msg-item .msg-text p {
+  position: relative;
   display: block;
   max-height: 238px;
-  min-height: 238px;
-  font-size: 1rem;
-  padding: 3.23974vh 2.33645vw;
+  font-size: 3.73832vw;
+  margin: 1.07991vh 2.33645vw;
   line-height: 1.5;
   overflow-y: scroll;
 }
@@ -336,7 +341,7 @@ main .qs {
 }
 
 main .qs h2 {
-  font-size: 2.1875rem;
+  font-size: 8.17757vw;
   text-align: center;
 }
 
@@ -355,35 +360,35 @@ main .qs ul li a {
 }
 
 main .qs ul li:nth-child(1) {
-  border-bottom: 2px solid #EB3223;
+  border-bottom: 2px solid #eb3223;
 }
 
 main .qs ul li:nth-child(1) em {
-  color: #EB3223;
+  color: #eb3223;
 }
 
 main .qs ul li:nth-child(2) {
-  border-bottom: 2px solid #BB407E;
+  border-bottom: 2px solid #bb407e;
 }
 
 main .qs ul li:nth-child(2) em {
-  color: #BB407E;
+  color: #bb407e;
 }
 
 main .qs ul li:nth-child(3) {
-  border-bottom: 2px solid #69A555;
+  border-bottom: 2px solid #69a555;
 }
 
 main .qs ul li:nth-child(3) em {
-  color: #69A555;
+  color: #69a555;
 }
 
 main .qs ul li:nth-child(4) {
-  border-bottom: 2px solid #3C91D5;
+  border-bottom: 2px solid #3c91d5;
 }
 
 main .qs ul li:nth-child(4) em {
-  color: #3C91D5;
+  color: #3c91d5;
 }
 
 footer {
@@ -405,4 +410,37 @@ footer p {
   background-color: #53a849;
   color: #fff;
   text-align: center;
+}
+
+@media only screen and (min-width: 450px) {
+  main .intro h2,
+  main .concept h2,
+  main .message h2,
+  main .qs h2 {
+    font-size: 2.1875rem;
+  }
+  main .catch h2 {
+    font-size: 3.125rem;
+  }
+  main .catch p {
+    font-size: 1.25rem;
+  }
+  main .intro ul {
+    font-size: 1.5625rem;
+  }
+  main .intro .btn {
+    font-size: 1.5625rem;
+  }
+  main .concept .btn {
+    font-size: 1.5625rem;
+  }
+  main .message .msg-item {
+    height: auto;
+  }
+  main .message .msg-item .msg-text h3 {
+    font-size: 1.25rem;
+  }
+  main .message .msg-item .msg-text p {
+    font-size: 1rem;
+  }
 }
