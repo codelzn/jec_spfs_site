@@ -8,10 +8,14 @@
 
 body,
 html {
-  background-color: #fff;
   font-size: 16px;
   font-family: "Yusei Magic", sans-serif;
   transition: all 0.25s 0s;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 li {
@@ -24,14 +28,14 @@ a {
 
 header .nav {
   position: fixed;
-  z-index: 9;
-  top: 2.1598272138vh;
+  z-index: 90;
+  top: 18px;
   right: 4.2056074766vw;
 }
 header .nav .burger {
   box-sizing: border-box;
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   right: 0;
   top: 0;
   width: 40px;
@@ -72,7 +76,7 @@ header .nav .burger-content {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 9;
+  z-index: 90;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -89,11 +93,11 @@ header .nav .burger-content ul li a {
 }
 header .nav .burger-content.active {
   position: fixed;
-  z-index: 7;
+  z-index: 70;
   right: 0;
   top: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   border-radius: 0;
 }
 header .nav .burger-content.active ul.active {
@@ -103,4 +107,23 @@ header .nav .burger-content.active ul.active {
   justify-content: center;
   align-items: center;
   gap: 4.3196544276vh;
+}
+
+footer {
+  position: relative;
+}
+footer .totop {
+  position: absolute;
+  right: 5.1401869159vw;
+  bottom: 6.4794816415vh;
+}
+footer p {
+  font-size: 1rem;
+  display: block;
+  height: 4.7516198704vh;
+  line-height: 4.7516198704vh;
+  width: 100vw;
+  background-color: #53a849;
+  color: #fff;
+  text-align: center;
 }/*# sourceMappingURL=common.css.map */

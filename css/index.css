@@ -235,6 +235,7 @@ main .qs ul {
 main .qs ul li a {
   white-space: nowrap;
   text-overflow: unset;
+  color: #000;
 }
 main .qs ul li:nth-child(1) {
   border-bottom: 2px solid #eb3223;
@@ -259,25 +260,6 @@ main .qs ul li:nth-child(4) {
 }
 main .qs ul li:nth-child(4) em {
   color: #3c91d5;
-}
-
-footer {
-  position: relative;
-}
-footer .totop {
-  position: absolute;
-  right: 5.1401869159vw;
-  bottom: 6.4794816415vh;
-}
-footer p {
-  font-size: 1rem;
-  display: block;
-  height: 4.7516198704vh;
-  line-height: 4.7516198704vh;
-  width: 100vw;
-  background-color: #53a849;
-  color: #fff;
-  text-align: center;
 }
 
 @media only screen and (min-width: 450px) {

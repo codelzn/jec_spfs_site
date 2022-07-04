@@ -1,1 +1,240 @@
-/*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+img {
+  width: 100%;
+}
+
+html,
+body {
+  background-color: #ecf6e0;
+}
+
+header {
+  background-color: inherit;
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: 50%;
+  min-width: 390px;
+}
+header h1 {
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 51;
+}
+
+header::after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  z-index: 50;
+  background-color: inherit;
+}
+
+main {
+  max-width: 768px;
+  margin: 80px auto 0;
+}
+main .content1 {
+  display: flex;
+  width: 100%;
+}
+main .content1 .maincontent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .content1 .maincontent h2 {
+  margin-bottom: 4.3196544276vh;
+  font-size: 4.3196544276vh;
+}
+main .content1 .maincontent .time1 h3 {
+  font-size: 3.2397408207vh;
+  text-align: center;
+  margin-bottom: 2.3758099352vh;
+}
+main .content1 .maincontent .time1 dl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8.6393088553vh;
+  font-size: 2.3758099352vh;
+}
+main .content1 .maincontent .time1 dl dt {
+  margin-top: 2.5917926566vh;
+}
+main .content1 .maincontent .time1 dl dd {
+  margin-top: 1.9438444924vh;
+}
+main .content1 .maincontent .time2 h3 {
+  font-size: 3.2397408207vh;
+  text-align: center;
+  margin-bottom: 2.3758099352vh;
+}
+main .content1 .maincontent .time2 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8.6393088553vh;
+  font-size: 2.3758099352vh;
+}
+main .content1 .maincontent .time2 ul li {
+  margin-top: 2.5917926566vh;
+  position: relative;
+}
+main .content1 .maincontent .time2 ul li:nth-child(1)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -22px;
+  top: 5px;
+  width: 2.5917926566vh;
+  height: 2.5917926566vh;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+main .content1 .maincontent .time2 ul li:nth-child(2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -22px;
+  top: 5px;
+  width: 2.5917926566vh;
+  height: 2.5917926566vh;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+main .content1 .maincontent .time2 ul li:nth-child(3)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -22px;
+  top: 5px;
+  width: 2.5917926566vh;
+  height: 2.5917926566vh;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+main .content1 .maincontent .time2 ul li:nth-child(4)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -22px;
+  top: 5px;
+  width: 2.5917926566vh;
+  height: 2.5917926566vh;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+main .content1 .maincontent .time2 ul li:nth-child(1)::after {
+  background-color: #6888FF;
+}
+main .content1 .maincontent .time2 ul li:nth-child(2)::after {
+  background-color: #ffffff;
+}
+main .content1 .maincontent .time2 ul li:nth-child(3)::after {
+  background-color: #FF6975;
+}
+main .content1 .maincontent .time2 ul li:nth-child(4)::after {
+  background-color: #FEF342;
+}
+main .content1 .maincontent .colorteam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .content1 .maincontent .colorteam h3 {
+  font-size: 3.2397408207vh;
+  text-align: center;
+  margin-bottom: 2.3758099352vh;
+}
+main .content1 .maincontent .colorteam section {
+  margin-bottom: 4.3196544276vh;
+  border-radius: 3px;
+  padding: 1.0799136069vh 3.2397408207vh;
+  width: 58.4112149533vw;
+  max-width: 430px;
+}
+main .content1 .maincontent .colorteam section h4 {
+  text-align: center;
+  font-size: 2.807775378vh;
+  margin-bottom: 2.1598272138vh;
+}
+main .content1 .maincontent .colorteam section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.1598272138vh;
+  gap: 1.0799136069vh;
+}
+main .content1 .maincontent .colorteam section.blue {
+  background-color: #6888FF;
+}
+main .content1 .maincontent .colorteam section.white {
+  background-color: #ffffff;
+}
+main .content1 .maincontent .colorteam section.red {
+  background-color: #FF6975;
+}
+main .content1 .maincontent .colorteam section.yellow {
+  background-color: #FEF342;
+}
+main .content1 .maincontent .tonext {
+  position: relative;
+  font-size: 3.0237580994vh;
+  margin-bottom: 5.3995680346vh;
+}
+main .content1 .maincontent .tonext::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -24px;
+  top: 6px;
+  width: 22px;
+  height: 22px;
+  background: url("../../images/btn_after.svg") no-repeat;
+  background-size: contain;
+}
+main .content1 .toam {
+  flex-basis: 15%;
+}
+main .content2 {
+  display: none;
+}
+main .changeTime {
+  position: fixed;
+  display: block;
+  height: 100vh;
+  width: 15vw;
+  right: 0;
+  top: 80px;
+  background-color: pink;
+}
+main .changeTime p {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 2;
+  text-align: center;
+  background-color: #fbf5d5;
+}
+
+@media only screen and (min-width: 450px) {
+  main .content1 .maincontent h2 {
+    font-size: 2.5rem;
+  }
+  main .content1 .maincontent .time1 h3, main .content1 .maincontent .time2 h3 {
+    font-size: 1.875rem;
+  }
+  main .content1 .maincontent .colorteam h3 {
+    font-size: 1.875rem;
+  }
+  main .content1 .maincontent .colorteam section h4 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=index.css.map */

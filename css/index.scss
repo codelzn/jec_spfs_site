@@ -255,6 +255,7 @@ main {
         a {
           white-space: nowrap;
           text-overflow: unset;
+          color: #000;
         }
         &:nth-child(1) {
           border-bottom: 2px solid #eb3223;
@@ -284,24 +285,24 @@ main {
     }
   }
 }
-footer {
-  position: relative;
-  .totop {
-    position: absolute;
-    right: vw(22);
-    bottom: vh(60);
-  }
-  p {
-    font-size: 1rem;
-    display: block;
-    height: vh(44);
-    line-height: vh(44);
-    width: 100vw;
-    background-color: $btn-green;
-    color: #fff;
-    text-align: center;
-  }
-}
+// footer {
+//   position: relative;
+//   .totop {
+//     position: absolute;
+//     right: vw(22);
+//     bottom: vh(60);
+//   }
+//   p {
+//     font-size: 1rem;
+//     display: block;
+//     height: vh(44);
+//     line-height: vh(44);
+//     width: 100vw;
+//     background-color: $btn-green;
+//     color: #fff;
+//     text-align: center;
+//   }
+// }
 @media only screen and (min-width: 450px) {
   main {
     .intro,
