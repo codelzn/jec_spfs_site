@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+img {
+  width: 100%;
+}
+
+html,
+body {
+  background-color: #fbf5d5;
+}
+
+header {
+  background-color: inherit;
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: 50%;
+  min-width: 390px;
+}
+header h1 {
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 51;
+}
+
+header::after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  z-index: 50;
+  background-color: inherit;
+}
+
+main {
+  display: block;
+  background-color: skyblue;
+  height: 500px;
+  width: 100vw;
+}/*# sourceMappingURL=index.css.map */
