@@ -16,7 +16,11 @@ $text-orange: #df7c3e;
 $burger-content-bgc: rgba(255, 255, 255, 0.9);
 html,
 body {
+  transition: all 0.5s ease;
   background-color: $bgc-green;
+  &.pm {
+    background-color: $bgc-yellow;
+  }
 }
 header {
   background-color: inherit;
@@ -46,11 +50,10 @@ header::after {
 main {
   max-width: 768px;
   margin: 80px auto 0;
-  .content1 {
-    display: flex;
+  .content {
     width: 100%;
     .maincontent {
-      width: 100%;
+      width: 85%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -59,6 +62,7 @@ main {
         font-size: vh(40);
       }
       .time1 {
+        width: 100%;
         h3 {
           font-size: vh(30);
           text-align: center;
@@ -79,43 +83,51 @@ main {
         }
       }
       .time2 {
+        width: 100%;
         h3 {
           font-size: vh(30);
           text-align: center;
           margin-bottom: vh(22);
         }
         ul {
+          width: 100%;
+          text-align: center;
           display: flex;
           flex-direction: column;
           align-items: center;
           margin-bottom: vh(80);
           font-size: vh(22);
           li {
+            width: 100%;
             margin-top: vh(24);
-            position: relative;
+            span {
+              position: relative;
+            }
             @for $i from 1 through 4 {
-              &:nth-child(#{$i})::after {
-                content: '';
-                display: block;
-                position: absolute;
-                right: -22px;
-                top: 5px;
-                width: vh(24);
-                height: vh(24);
-                border-radius: 50%;
-                border: 1px solid #ccc;
+              &:nth-child(#{$i}) {
+                span::after {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  right: -26px;
+                  top: 5px;
+                  width: vh(24);
+                  height: vh(24);
+                  border-radius: 50%;
+                  border: 1px solid #ccc;
+                }
               }
             }
-            &:nth-child(1)::after {
+            &:nth-child(1) span::after {
               background-color: #6888FF;
             }
-            &:nth-child(2)::after {
+            &:nth-child(2) span::after {
               background-color: #ffffff;
             }
-            &:nth-child(3)::after {
+            &:nth-child(3) span::after {
               background-color: #FF6975;
             }
-            &:nth-child(4)::after {
+            &:nth-child(4) span::after {
               background-color: #FEF342;
             }
           }
@@ -171,7 +183,7 @@ main {
           display: block;
           position: absolute;
           right: -24px;
-          top: 6px;
+          top: 8px;
           width: 22px;
           height: 22px;
           background: url("../../images/btn_after.svg") no-repeat;
@@ -179,12 +191,27 @@ main {
         }
       }
     }
-    .toam {
-      flex-basis: 15%;
+    .toam, .topm{
+      width: 15%;
+    }
+  }
+  .content1 {
+    display: none;
+    .maincontent {
+      left: 0;
+    }
+    &.active {
+      display: flex;
     }
   }
   .content2 {
     display: none;
+    .maincontent {
+      right: 0;
+    }
+    &.active {
+      display: flex;
+    }
   }
   .changeTime {
     position: fixed;
@@ -193,7 +220,9 @@ main {
     width: 15vw;
     right: 0;
     top: 80px;
-    background-color: pink;
+    &.active {
+      left: 0;
+    }
     p {
       display: block;
       position: absolute;
@@ -202,12 +231,25 @@ main {
       line-height: 2;
       text-align: center;
       background-color: $bgc-yellow;
+      &::after {
+        content: '';
+        display: block;
+        margin-top: vh(30);
+        width: 100%;
+        height: 30px;
+        background: url('../../images/touch.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      &.pm {
+        background-color: $bgc-green;
+      }
     }
   }
 }
 @media only screen and (min-width: 450px) {
   main {
-    .content1 {
+    .content {
       .maincontent {
         h2 {
           font-size: 2.5rem;
