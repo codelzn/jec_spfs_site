@@ -42,9 +42,6 @@ header::after {
   z-index: 50;
   background-color: inherit;
 }
-main {
-  display: block;
-  background-color: skyblue;
-  height: 500px;
-  width: 100vw;
+.dialog {
+  display: none;
 }

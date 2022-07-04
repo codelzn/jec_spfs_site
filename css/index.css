@@ -162,6 +162,9 @@ main .concept .btn {
   line-height: 47px;
   padding-left: 1rem;
 }
+main .concept .btn a {
+  color: #fff;
+}
 main .concept .btn::after {
   content: "";
   display: block;

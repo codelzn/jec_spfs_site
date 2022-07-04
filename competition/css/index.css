@@ -34,9 +34,6 @@ header::after {
   background-color: inherit;
 }
 
-main {
-  display: block;
-  background-color: skyblue;
-  height: 500px;
-  width: 100vw;
+.dialog {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

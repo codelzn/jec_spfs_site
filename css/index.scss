@@ -177,6 +177,9 @@ main {
       font-size: vw(25);
       line-height: 47px;
       padding-left: 1rem;
+      a {
+        color: #fff;
+      }
       &::after {
         content: "";
         display: block;
