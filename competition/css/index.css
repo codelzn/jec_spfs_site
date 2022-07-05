@@ -34,6 +34,46 @@ header::after {
   background-color: inherit;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 0;
+}
+main h2 {
+  text-align: center;
+  font-size: 4.3196544276vh;
+  margin-bottom: 4.3196544276vh;
+}
+main .mainSp {
+  width: 90%;
+}
+main .mainSp h3 {
+  font-size: 3.2397408207vh;
+  text-align: center;
+  margin-bottom: 2.3758099352vh;
+}
+main .mainSp ul {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5.3995680346vh;
+}
+main .mainSp ul li {
+  background-color: skyblue;
+  width: 100%;
+}
+
 .dialog {
   display: none;
+}
+
+@media only screen and (min-width: 450px) {
+  main h2 {
+    font-size: 2.5rem;
+  }
+  main .mainSp h3 {
+    font-size: 1.875rem;
+  }
 }/*# sourceMappingURL=index.css.map */

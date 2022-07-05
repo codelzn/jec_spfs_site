@@ -42,6 +42,48 @@ header::after {
   z-index: 50;
   background-color: inherit;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 0;
+  h2 {
+    text-align: center;
+    font-size: vh(40);
+    margin-bottom: vh(40);
+  }
+  .mainSp {
+    width: 90%;
+    h3 {
+      font-size: vh(30);
+      text-align: center;
+      margin-bottom: vh(22);
+    }
+    ul {
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: vh(50);
+      li {
+        background-color: skyblue;
+        width: 100%;
+      }
+    }
+  }
+}
 .dialog {
   display: none;
+}
+@media only screen and (min-width: 450px) {
+  main {
+    h2 {
+      font-size: 2.5rem;
+    }
+    .mainSp {
+      h3 {
+        font-size: 1.875rem;
+      }
+    }
+  }
 }
