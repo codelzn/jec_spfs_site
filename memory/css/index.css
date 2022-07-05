@@ -34,7 +34,63 @@ header::after {
 }
 
 main {
-  width: 100%;
-  height: 300px;
-  background-color: skyblue;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 0;
+}
+main h2 {
+  text-align: center;
+  font-size: 4.3196544276vh;
+  margin-bottom: 4.3196544276vh;
+}
+main .func {
+  margin-bottom: 8.6393088553vh;
+}
+main .func h3 {
+  font-size: 3.2397408207vh;
+  text-align: center;
+  margin-bottom: 2.3758099352vh;
+}
+main .func p {
+  text-align: center;
+  line-height: 2;
+}
+main .func p i {
+  font-style: normal;
+  color: #ff0000;
+}
+main .func p.spfshash a {
+  color: #ff0000;
+  text-decoration: underline;
+}
+main .sample {
+  margin-bottom: 8.6393088553vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .sample img {
+  width: 48%;
+  margin-bottom: 2.1598272138vh;
+}
+main .notice {
+  margin-bottom: 8.6393088553vh;
+  color: #ff0000;
+}
+main .notice h3 {
+  font-size: 3.2397408207vh;
+  text-align: center;
+  margin-bottom: 2.3758099352vh;
+}
+
+@media only screen and (min-width: 450px) {
+  main h2 {
+    font-size: 2.5rem;
+  }
+  main .func h3,
+main .notice h3 {
+    font-size: 1.875rem;
+  }
 }/*# sourceMappingURL=index.css.map */
