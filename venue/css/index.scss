@@ -178,12 +178,15 @@ main {
         position: relative;
         font-size: vh(28);
         margin-bottom: vh(50);
+        a {
+          color: #000;
+        }
         &::after {
           content: "";
           display: block;
           position: absolute;
           right: -24px;
-          top: 8px;
+          top: 5px;
           width: 22px;
           height: 22px;
           background: url("../../images/btn_after.svg") no-repeat;

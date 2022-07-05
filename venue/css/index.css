@@ -203,12 +203,15 @@ main .content .maincontent .tonext {
   font-size: 3.0237580994vh;
   margin-bottom: 5.3995680346vh;
 }
+main .content .maincontent .tonext a {
+  color: #000;
+}
 main .content .maincontent .tonext::after {
   content: "";
   display: block;
   position: absolute;
   right: -24px;
-  top: 8px;
+  top: 5px;
   width: 22px;
   height: 22px;
   background: url("../../images/btn_after.svg") no-repeat;
