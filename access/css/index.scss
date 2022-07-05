@@ -1,5 +1,118 @@
-main {
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+@function vw($px) {
+  @return ($px / 428) * 100vw;
+}
+@function vh($px) {
+  @return ($px / 926) * 100vh;
+}
+img {
   width: 100%;
-  height: 300px;
-  background-color: skyblue;
+}
+$bgc-green: #ecf6e0;
+$bgc-yellow: #fbf5d5;
+$bgc-blue: #5191cf;
+$btn-green: #53a849;
+$text-orange: #df7c3e;
+$burger-content-bgc: rgba(255, 255, 255, 0.9);
+html,
+body {
+  background-color: $bgc-green;
+}
+header {
+  background-color: inherit;
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: 50%;
+  min-width: 390px;
+  h1 {
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 51;
+  }
+}
+header::after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  z-index: 50;
+  background-color: inherit;
+}
+main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 0;
+  h2 {
+    text-align: center;
+    font-size: vh(40);
+    margin-bottom: vh(40);
+  }
+  .syuugo {
+    width: 100%;
+    max-width: 768px;
+    h3 {
+      font-size: vh(30);
+      text-align: center;
+      margin-bottom: vh(22);
+    }
+    p {
+      text-align: center;
+      line-height: 2;
+      color: #ff0000;
+    }
+    .googlemap {
+      width: 100%;
+      height: vh(350);
+    }
+  }
+  .odoom, .idoom {
+    width: 100%;
+    max-width: 768px;
+    margin-top: vh(80);
+    h3 {
+      font-size: vh(30);
+      text-align: center;
+      margin-bottom: vh(22);
+    }
+  }
+  .eki {
+    width: 100%;
+    max-width: 768px;
+    margin: vh(80) 0;
+    h3 {
+      font-size: vh(30);
+      text-align: center;
+      margin-bottom: vh(22);
+    }
+    dl {
+      text-align: center;
+      font-size: vh(18);
+      line-height: 2;
+      dt {
+        font-size: vh(22);
+        margin-top: vh(30);
+        &.e {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 450px) {
+  main {
+    h2 {
+      font-size: 2.5rem;
+    }
+    .odoom, .idoom, .eki {
+      h3 {
+        font-size: 1.875rem;
+      }
+    }
+  }
 }

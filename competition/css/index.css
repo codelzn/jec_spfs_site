@@ -47,6 +47,7 @@ main h2 {
 }
 main .mainSp {
   width: 90%;
+  margin-bottom: 8.6393088553vh;
 }
 main .mainSp h3 {
   font-size: 3.2397408207vh;
@@ -57,18 +58,89 @@ main .mainSp ul {
   margin: 0 auto;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 5.3995680346vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.1682242991vw;
+  justify-content: space-around;
 }
 main .mainSp ul li {
-  border-radius: 3px;
-  overflow: hidden;
-  background-color: skyblue;
-  width: 100%;
+  width: 45%;
+}
+main .mainSp ul li:nth-child(1), main .mainSp ul li:nth-child(2) {
+  margin-bottom: 5.3995680346vh;
+}
+main .mainSp ul li figure figcaption {
+  display: block;
+  margin-top: 2.1598272138vh;
+  text-align: center;
+}
+main .mainSp ul li figure figcaption a {
+  font-size: 2.3758099352vh;
+  color: #000;
+  text-decoration: underline;
+}
+main .attractions,
+main .side {
+  width: 90%;
+  margin-bottom: 8.6393088553vh;
+}
+main .attractions h3,
+main .side h3 {
+  font-size: 3.2397408207vh;
+  text-align: center;
+  margin-bottom: 2.3758099352vh;
+}
+main .attractions ul,
+main .side ul {
+  text-align: center;
+}
+main .attractions ul li:nth-child(1),
+main .side ul li:nth-child(1) {
+  margin-bottom: 2.807775378vh;
+}
+main .attractions ul li a,
+main .side ul li a {
+  font-size: 2.3758099352vh;
+  color: #000;
+  text-decoration: underline;
+}
+main .side ul li a {
+  text-decoration: none;
 }
 
 .dialog {
   display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.58);
+}
+.dialog .content {
+  border-radius: 3px;
+  width: 80vw;
+  height: 50vh;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+.dialog .content h4 {
+  text-align: center;
+  display: block;
+  height: 6.4794816415vh;
+  font-size: 4.3196544276vh;
+  background-color: #ebbf59;
+}
+.dialog .content p {
+  display: block;
+  padding: 20px;
+  font-size: 2.807775378vh;
+  line-height: 2;
 }
 
 @media only screen and (min-width: 450px) {
@@ -76,6 +148,12 @@ main .mainSp ul li {
     font-size: 2.5rem;
   }
   main .mainSp h3 {
+    font-size: 1.875rem;
+  }
+  main .mainSp ul li figure figcaption a {
+    font-size: 1.375rem;
+  }
+  main .attractions h3 {
     font-size: 1.875rem;
   }
 }/*# sourceMappingURL=index.css.map */

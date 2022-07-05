@@ -1,5 +1,107 @@
-main {
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+img {
   width: 100%;
-  height: 300px;
-  background-color: skyblue;
+}
+
+html,
+body {
+  background-color: #ecf6e0;
+}
+
+header {
+  background-color: inherit;
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: 50%;
+  min-width: 390px;
+}
+header h1 {
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 51;
+}
+
+header::after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  z-index: 50;
+  background-color: inherit;
+}
+
+main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 0;
+}
+main h2 {
+  text-align: center;
+  font-size: 4.3196544276vh;
+  margin-bottom: 4.3196544276vh;
+}
+main .syuugo {
+  width: 100%;
+  max-width: 768px;
+}
+main .syuugo h3 {
+  font-size: 3.2397408207vh;
+  text-align: center;
+  margin-bottom: 2.3758099352vh;
+}
+main .syuugo p {
+  text-align: center;
+  line-height: 2;
+  color: #ff0000;
+}
+main .syuugo .googlemap {
+  width: 100%;
+  height: 37.7969762419vh;
+}
+main .odoom, main .idoom {
+  width: 100%;
+  max-width: 768px;
+  margin-top: 8.6393088553vh;
+}
+main .odoom h3, main .idoom h3 {
+  font-size: 3.2397408207vh;
+  text-align: center;
+  margin-bottom: 2.3758099352vh;
+}
+main .eki {
+  width: 100%;
+  max-width: 768px;
+  margin: 8.6393088553vh 0;
+}
+main .eki h3 {
+  font-size: 3.2397408207vh;
+  text-align: center;
+  margin-bottom: 2.3758099352vh;
+}
+main .eki dl {
+  text-align: center;
+  font-size: 1.9438444924vh;
+  line-height: 2;
+}
+main .eki dl dt {
+  font-size: 2.3758099352vh;
+  margin-top: 3.2397408207vh;
+}
+main .eki dl dt.e {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 450px) {
+  main h2 {
+    font-size: 2.5rem;
+  }
+  main .odoom h3, main .idoom h3, main .eki h3 {
+    font-size: 1.875rem;
+  }
 }/*# sourceMappingURL=index.css.map */
