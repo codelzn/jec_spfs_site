@@ -61,6 +61,8 @@ main .mainSp ul {
   gap: 5.3995680346vh;
 }
 main .mainSp ul li {
+  border-radius: 3px;
+  overflow: hidden;
   background-color: skyblue;
   width: 100%;
 }

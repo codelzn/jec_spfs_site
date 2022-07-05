@@ -66,6 +66,8 @@ main {
       flex-direction: column;
       gap: vh(50);
       li {
+        border-radius: 3px;
+        overflow: hidden;
         background-color: skyblue;
         width: 100%;
       }
