@@ -4,6 +4,10 @@
 @function vh($px) {
   @return ($px / 926) * 100vh;
 }
+li {
+  list-style:katakana;
+  margin-bottom: vh(20);
+}
 img {
   width: 100%;
 }
@@ -15,7 +19,7 @@ $text-orange: #df7c3e;
 $burger-content-bgc: rgba(255, 255, 255, 0.9);
 html,
 body {
-  background-color: $bgc-green;
+  background-color: $bgc-yellow;
 }
 header {
   background-color: inherit;
@@ -52,17 +56,30 @@ main {
     font-size: vh(40);
     margin-bottom: vh(40);
   }
+  details {
+    margin-top: vh(40);
+    width: 80%;
+  }
+  .cont {
+    ul,dl {
+      padding: 20px 30px;
+      font-size: vh(18);
+    }
+    summary {
+      position: relative;
+      font-size:vh(24);
+    }
+  }
+  .sirase {
+    margin: vh(80) auto;
+    background-color: #fff;
+    padding: 20px;
+  }
 }
 @media only screen and (min-width: 450px) {
   main {
     h2 {
       font-size: 2.5rem;
-    }
-    .func,
-    .notice {
-      h3 {
-        font-size: 1.875rem;
-      }
     }
   }
 }
